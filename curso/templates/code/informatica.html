@@ -1,0 +1,22 @@
+{% extends 'base.html'%}
+
+{% block title%}
+Curso de informática
+{% endblock %} 
+
+
+{% block body %}
+
+
+{% for objeto in info %}
+
+<br>
+<h1>{{objeto.titulo }}</h1>
+<br>
+<p> <img class="card-img" src="{{objeto.imagem.url}}" alt="Imagem da Postagem"></p>
+<p>{{objeto.descricao}}</p>
+
+
+{% endfor %}
+
+{% endblock %}
